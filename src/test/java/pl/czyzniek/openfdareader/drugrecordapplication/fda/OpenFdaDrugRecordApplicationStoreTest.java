@@ -16,7 +16,7 @@ import pl.czyzniek.openfdareader.error.StructuredError;
 @ExtendWith(SoftAssertionsExtension.class)
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.NONE,
-    properties = {"fda.baseUrl=http://localhost:${wiremock.server.port}"})
+    properties = {"fda.baseUrl=http://localhost:${wiremock.server.port}", "springdoc.api-docs.enabled=false"})
 @AutoConfigureWireMock(port = 0)
 class OpenFdaDrugRecordApplicationStoreTest {
 

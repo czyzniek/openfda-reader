@@ -2,12 +2,14 @@ package pl.czyzniek.openfdareader.drugrecordapplication.fda;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 import lombok.Value;
 
 @Value
 class DrugRecordApplication {
     String applicationNumber;
     String sponsorName;
+    Map<String, List<String>> openfda;
     List<Submission> submissions;
     List<Product> products;
 

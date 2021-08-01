@@ -2,6 +2,7 @@ package pl.czyzniek.openfdareader.drugrecordapplication.fda;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 class DrugRecordApplicationFixture {
 
@@ -9,6 +10,7 @@ class DrugRecordApplicationFixture {
         return new DrugRecordApplication(
             applicationNumber,
             "SPONSOR_NAME",
+            Map.of(),
             List.of(new DrugRecordApplication.Submission(
                 "SUPPL",
                 "5",
