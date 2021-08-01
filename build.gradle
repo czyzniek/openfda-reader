@@ -3,10 +3,11 @@ plugins {
     id 'org.springframework.boot' version '2.5.3'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'io.freefair.lombok' version '5.3.3.3'
+    id 'com.google.cloud.tools.jib' version '3.1.2'
 }
 
 group = 'pl.czyzniek'
-version = '0.0.1-SNAPSHOT'
+version = '1.0.0'
 sourceCompatibility = '11'
 
 lombok.version = '1.18.20'
