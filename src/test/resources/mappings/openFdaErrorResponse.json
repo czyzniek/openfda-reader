@@ -1,0 +1,33 @@
+{
+  "id": "0c45df90-6a83-4193-9f7a-226f45cb7de5",
+  "priority": 5,
+  "request": {
+    "urlPath": "/drug/drugsfda.json",
+    "method": "GET",
+    "queryParameters": {
+      "search": {
+        "equalTo": "patient.drug.openfda.manufacturer_name:WRONG"
+      },
+      "limit": {
+        "absent": true
+      },
+      "skip": {
+        "absent": true
+      },
+      "sort": {
+        "absent": true
+      }
+    }
+  },
+  "response": {
+    "status": 404,
+    "body": "{\"error\":{\"code\":\"NOT_FOUND\",\"message\":\"No matches found!\"}}",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  },
+  "uuid": "0c45df90-6a83-4193-9f7a-226f45cb7de5"
+}

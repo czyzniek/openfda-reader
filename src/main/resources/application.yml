@@ -1,0 +1,6 @@
+fda:
+  baseUrl: https://api.fda.gov
+
+logging:
+  level:
+    org.springframework.jdbc.core.JdbcTemplate: debug

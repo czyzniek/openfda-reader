@@ -1,0 +1,33 @@
+{
+  "id": "a7316e14-dcac-4278-8bf2-356c8022825f",
+  "priority": 4,
+  "request": {
+    "urlPath": "/drug/drugsfda.json",
+    "method": "GET",
+    "queryParameters": {
+      "search": {
+        "equalTo": "patient.drug.openfda.manufacturer_name:Manufacturer Name"
+      },
+      "limit": {
+        "absent": true
+      },
+      "skip": {
+        "absent": true
+      },
+      "sort": {
+        "absent": true
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": "{\"meta\":{\"disclaimer\":\"Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.\",\"terms\":\"https://open.fda.gov/terms/\",\"license\":\"https://open.fda.gov/license/\",\"last_updated\":\"2021-07-27\",\"results\":{\"skip\":0,\"limit\":1,\"total\":24987}},\"results\":[{\"submissions\":[{\"submission_type\":\"ORIG\",\"submission_number\":\"1\",\"submission_status\":\"AP\",\"submission_status_date\":\"20030718\"},{\"submission_type\":\"SUPPL\",\"submission_number\":\"1\",\"submission_status\":\"AP\",\"submission_status_date\":\"20060703\",\"submission_class_code\":\"LABELING\",\"submission_class_code_description\":\"Labeling\"}],\"application_number\":\"ANDA076242\",\"sponsor_name\":\"HIKMA\",\"openfda\":{\"application_number\":[\"ANDA076242\"],\"brand_name\":[\"CALCITRIOL\"],\"generic_name\":[\"CALCITRIOL\"],\"manufacturer_name\":[\"Hikma Pharmaceuticals USA Inc.\"],\"product_ndc\":[\"0054-3120\"],\"product_type\":[\"HUMAN PRESCRIPTION DRUG\"],\"route\":[\"ORAL\"],\"substance_name\":[\"CALCITRIOL\"],\"rxcui\":[\"313932\"],\"spl_id\":[\"b9ae6c7e-02c5-4819-ba6e-d6e92f442fc7\"],\"spl_set_id\":[\"3289b482-8733-484d-b1db-d7f4cdcd1ac2\"],\"package_ndc\":[\"0054-3120-41\"],\"nui\":[\"M0004229\",\"N0000175908\"],\"pharm_class_cs\":[\"Cholecalciferol [CS]\"],\"pharm_class_epc\":[\"Vitamin D3 Analog [EPC]\"],\"unii\":[\"FXC9231JVH\"]},\"products\":[{\"product_number\":\"001\",\"reference_drug\":\"No\",\"brand_name\":\"CALCITRIOL\",\"active_ingredients\":[{\"name\":\"CALCITRIOL\",\"strength\":\"1MCG/ML\"}],\"reference_standard\":\"No\",\"dosage_form\":\"SOLUTION\",\"route\":\"ORAL\",\"marketing_status\":\"Prescription\",\"te_code\":\"AA\"}]}]}",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "transformers": [
+      "response-template"
+    ]
+  },
+  "uuid": "a7316e14-dcac-4278-8bf2-356c8022825f"
+}
